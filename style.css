@@ -212,7 +212,7 @@ label {
     color: white;
 }
 
-@media (width<750px) {
+@media (width<900px) {
     .ConatinerInfo {
         width: 90%;
 
