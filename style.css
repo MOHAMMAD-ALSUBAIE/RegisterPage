@@ -255,7 +255,8 @@ label {
         display: none;
     }
     .b {
-        height: 60px;
+        height: 40px;
+         border-radius:10px ;
     }
     nav {
         margin-bottom: 60px;
