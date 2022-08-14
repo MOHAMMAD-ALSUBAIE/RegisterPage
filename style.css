@@ -1,0 +1,256 @@
+* {
+    box-sizing: border-box;
+    font-family: "Cairo", sans-serif;
+}
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+body {
+    background-image: url("StockSnap_ZTRNRJIREI.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+}
+
+:root {
+    --color: #2c3639;
+    --Hover: #3f4e4f;
+    --feld: #393e46;
+}
+/*NavBar part*/
+nav {
+    display: flex;
+    margin-bottom: 130px;
+    margin-left: 6%;
+}
+ul {
+    display: flex;
+    align-items: center;
+}
+li {
+    opacity: 50%;
+    margin-left: 90px;
+    list-style-type: none;
+    font-size: 21px;
+    margin-right: 50px;
+}
+/* New part to desply information of user */
+/* #contanirFlex {
+} */
+.ConatinerInfo {
+    width: 30%;
+    height: 500px;
+    background-color: aliceblue;
+    color: black;
+    /* font-size: 30px; */
+    position: relative;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 15px;
+    box-shadow: -10px 23px 33px -15px black;
+    display: none;
+    margin: auto;
+}
+
+.ConatinerInfo div {
+    margin-bottom: 35px;
+}
+.dashBoard {
+    text-align: center;
+}
+.font {
+    font-size: 18px;
+}
+.bold {
+    font-weight: bold;
+}
+#dateDisply {
+    position: absolute;
+    bottom: 45px;
+}
+#timeDisply {
+    position: absolute;
+    bottom: 3px;
+}
+/*  */
+#logo {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: var(--feld);
+    align-self: center;
+    margin-right: 20px;
+}
+
+/*Section part*/
+#sectionRigster {
+    margin-left: 8%;
+}
+h1 {
+    margin-top: 0;
+    font-size: 70px;
+    margin-bottom: 0;
+}
+h2 > span {
+    background-color: var(--feld);
+    height: 5px;
+    width: 5px;
+    display: inline-block;
+    border-radius: 50%;
+}
+h1 > span {
+    background-color: var(--feld);
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    border-radius: 50%;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 7px;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    color: #2c3333;
+    font-weight: bold;
+}
+/*form part inside section*/
+.form {
+    margin-top: 30px;
+}
+.firsRow {
+    display: flex;
+}
+
+.firstName {
+    position: relative;
+    margin-right: 10px;
+
+    padding: 2px 0 1px 15px;
+    width: 220px;
+    border-radius: 20px;
+    background-color: var(--feld);
+}
+.lastName {
+    position: relative;
+    margin-left: 10px;
+    padding: 1px 0 1px 15px;
+    width: 220px;
+    border-radius: 20px;
+    background-color: var(--feld);
+}
+.emailPass {
+    position: relative;
+    margin-top: 15px;
+    padding: 9px 0 9px 15px;
+    width: 460px;
+    border-radius: 22px;
+    background-color: var(--feld);
+}
+.button {
+    margin: 35px 20px 0 10px;
+}
+.buttonStyle {
+    padding: 17px;
+    border-radius: 20px;
+    width: 210px;
+    border: none;
+    color: white;
+}
+.cc {
+    color: black;
+}
+.buttonStyle:first-child {
+    margin-right: 10px;
+}
+.buttonStyle:nth-child(2) {
+    background-color: var(--feld);
+}
+.emailPassIcon {
+    position: absolute;
+    right: 4%;
+    bottom: 50%;
+}
+input[type="text"] {
+    border: none;
+    margin-top: 1px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none;
+}
+input[type="email"] {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none;
+}
+input[type="password"] {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    outline: none; /*to remove the default hover */
+}
+i {
+    position: absolute;
+    margin-left: 10%;
+    position: relative;
+    bottom: 25%;
+}
+label {
+    font-size: 12px;
+}
+/*Hover*/
+.firstName:hover,
+.lastName:hover,
+.emailPass:hover {
+    border: 2px solid;
+}
+.buttonStyle:hover {
+    background-color: var(--color);
+    color: white;
+}
+
+@media (width<750px) {
+    .ConatinerInfo {
+        width: 90%;
+
+        bottom: 90px;
+    }
+    /* filed */
+    .firsRow {
+        display: block;
+        width: 100%;
+    }
+    .firstName {
+        width: 300px;
+        margin: 0 0 20px 0;
+    }
+    .lastName {
+        width: 300px;
+        margin: 0 0 20px 0;
+    }
+    .emailPass {
+        width: 300px;
+        height: 68px;
+        box-sizing: border-box;
+    }
+
+    .buttonStyle {
+        width: 275px;
+        margin-bottom: 20px;
+    }
+    i {
+        position: absolute;
+        right: 4%;
+        bottom: 50%;
+    }
+    h1 {
+        font-size: 2rem;
+        margin-right: 10px;
+    }
+    ul {
+        display: none;
+    }
+}

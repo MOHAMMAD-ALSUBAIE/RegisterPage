@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <script
+            src="https://kit.fontawesome.com/39d16187ad.js"
+            crossorigin="anonymous"
+        ></script>
+    </head>
+    <body>
+        <nav>
+            <div id="logo"></div>
+
+            <h2>Anywhere app <span></span></h2>
+
+            <ul>
+                <li>Home</li>
+                <li>Join</li>
+            </ul>
+        </nav>
+        <div id="contanirFlex">
+            <section id="sectionRigster">
+                <div>
+                    <p>START FOR FREE</p>
+                    <h1>
+                        Create new account
+                        <span></span>
+                    </h1>
+                    <p>Already A Member ? <a href="">Log in</a></p>
+                </div>
+
+                <div class="form">
+                    <form>
+                        <div class="firsRow">
+                            <div class="firstName">
+                                <label>First name</label>
+                                <br />
+                                <input
+                                    class="firstnameFild"
+                                    type="text"
+                                    value=""
+                                />
+                                <i class="fa-solid fa-address-card"></i>
+                            </div>
+                            <div class="lastName">
+                                <label>Last name</label>
+                                <br />
+                                <input
+                                    class="lastnameFild"
+                                    type="text"
+                                    value=""
+                                />
+                                <i class="fa-solid fa-address-card"></i>
+                            </div>
+                        </div>
+
+                        <div class="emailPass">
+                            <label>Email</label>
+                            <br />
+                            <input class="emailFild" type="email" value="" />
+                            <i class="fa-solid fa-envelope emailPassIcon"></i>
+                        </div>
+                        <div class="emailPass">
+                            <label>Password</label>
+                            <br />
+                            <input class="pass" type="password" value="" />
+                            <i class="fa-solid fa-lock emailPassIcon"></i>
+                        </div>
+                        <div class="button">
+                            <button class="buttonStyle cc">
+                                Change method
+                            </button>
+                            <input
+                                class="buttonStyle b"
+                                type="submit"
+                                value="Create account"
+                            />
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section id="infoUser">
+                <div class="ConatinerInfo">
+                    <h3 class="dashBoard">User</h3>
+                    <div id="userfirsNmae" class="font">
+                        <label class="font bold">FirstName:</label>
+                        <label class="font" id="firstnameInput"></label>
+                    </div>
+
+                    <div id="userlastNmae" class="font">
+                        <label class="font bold">LastName:</label>
+                        <label class="font" id="lastnameInput"></label>
+                    </div>
+
+                    <div id="userEmali">
+                        <label class="font bold">Email:</label>
+                        <label class="font" id="emailInput"></label>
+                    </div>
+
+                    <div>
+                        <label class="font bold">Age:</label>
+                        <label class="font">none</label>
+                    </div>
+                    <div>
+                        <label class="font bold">Job:</label>
+                        <label class="font">none</label>
+                    </div>
+                    <div id="dateDisply">
+                        <label class="font bold">Date of Rigester:</label>
+                        <label class="font" id="dynmcDate"></label>
+                    </div>
+                    <div id="timeDisply">
+                        <label class="font bold">Time of Rigester:</label>
+                        <label class="font" id="dynmctime"></label>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
