@@ -213,6 +213,9 @@ label {
 }
 
 @media (width<900px) {
+    body{
+    overflow-x: hidden;
+    }
     .ConatinerInfo {
         width: 90%;
 
