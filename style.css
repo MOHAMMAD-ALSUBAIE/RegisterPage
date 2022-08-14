@@ -212,7 +212,7 @@ label {
     color: white;
 }
 
-@media (width<1200px) {
+@media (max-width: 750px) {
     body{
     overflow-x: hidden;
     }
