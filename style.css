@@ -212,7 +212,7 @@ label {
     color: white;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 500px) {
     body{
     overflow-x: hidden;
     }
@@ -242,7 +242,7 @@ label {
 
     .buttonStyle {
         width: 275px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     i {
         position: absolute;
